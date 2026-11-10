@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Please wait...</p>
+
+    <!-- action="/IPOJournal/Journal/ViewJournal" -->
+    <form id="postForm"
+          action="https://search.ipindia.gov.in/IPOJournal/Journal/ViewJournal"
+          method="POST">
+
+        <input type="hidden" name="FileName"
+            value="ipo-docs\IPIndia_Docs\PAT\2026\24_2026\Official Journal (24-2026) 12.06.2026) 1st part.pdf">
+    </form>
+
+    <!-- <form action="/IPOJournal/Journal/ViewJournal" method="post" target="_blank"> 
+        <input type="hidden" name="FileName"
+            value="ipo-docs\IPIndia_Docs\PAT\2026\24_2026\Official Journal (24-2026) 12.06.2026) 1st part.pdf">
+        <button type="submit" class="btn btn-link">
+            Part I <img src="/IPOJournal/Images/file-pdf.png">
+        </button>
+    </form> -->
+
+    <script>
+        document.getElementById("postForm").submit();
+    </script>
+</body>
+</html>
